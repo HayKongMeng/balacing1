@@ -41,6 +41,9 @@
   padding: 19px 17px 31px;
   flex-direction: column;
   align-items: stretch;
+  margin-right: auto;
+  width: auto;
+  flex-grow: 0;
 }
 
 .main-title {
