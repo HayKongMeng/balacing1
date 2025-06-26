@@ -10,14 +10,14 @@ export default function Example() {
       price: "$10.00/month",
       description:
         "Perfect for small projects, personal websites, and development environments",
-      features: [
-        "vCPU: 16",
-        "RAM: 32 GB",
-        "Storage: 10 GB",
-        "Transfer: Unlimited",
-        "Anti-DDoS: Free",
-        "Database Options: MySQL ,MongoDB",
-      ],
+      features: {
+        vCPU: "16",
+        RAM: "32 GB",
+        Storage: "10 GB",
+        Transfer: "Unlimited",
+        "Anti-DDoS": "Free",
+        "Database Options": "MySQL, MongoDB",
+      },
       showDetails: true,
       buttonText: "Choose plan",
       buttonType: "primary",
@@ -27,6 +27,14 @@ export default function Example() {
       level: "Level 2",
       type: "Pro plan",
       price: "$15.00/month",
+      features: {
+        vCPU: "32",
+        RAM: "64 GB",
+        Storage: "50 GB",
+        Transfer: "Unlimited",
+        "Anti-DDoS": "Free",
+        "Database Options": "MySQL, MongoDB, PostgreSQL",
+      },
       showDetails: false,
       buttonType: "dropdown",
     },
@@ -35,6 +43,14 @@ export default function Example() {
       level: "Level 3",
       type: "Enterprise plan",
       price: "$20.00/month",
+      features: {
+        vCPU: "64",
+        RAM: "128 GB",
+        Storage: "100 GB",
+        Transfer: "Unlimited",
+        "Anti-DDoS": "Premium",
+        "Database Options": "All databases + Redis",
+      },
       showDetails: false,
       buttonType: "dropdown",
     },
@@ -43,6 +59,14 @@ export default function Example() {
       level: "Level 4",
       type: "Enterprise plan",
       price: "$25.00/month",
+      features: {
+        vCPU: "128",
+        RAM: "256 GB",
+        Storage: "500 GB",
+        Transfer: "Unlimited",
+        "Anti-DDoS": "Premium",
+        "Database Options": "All databases + Dedicated",
+      },
       showDetails: false,
       buttonType: "dropdown",
     },
@@ -51,10 +75,20 @@ export default function Example() {
       level: "Level 5",
       type: "Enterprise plan",
       price: "$30.00/month",
+      features: {
+        vCPU: "256",
+        RAM: "512 GB",
+        Storage: "1 TB",
+        Transfer: "Unlimited",
+        "Anti-DDoS": "Enterprise",
+        "Database Options": "Custom solutions",
+      },
       showDetails: false,
       buttonType: "dropdown",
     },
   ];
+
+  const featureKeys = Object.keys(plans[0].features);
 
   return (
     <div className="mobile-pricing-container">
