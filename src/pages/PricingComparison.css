@@ -1,4 +1,13 @@
 /* Mobile-first responsive design for pricing component */
+.pricing-wrapper {
+  font-family:
+    "Inter",
+    -apple-system,
+    "Roboto",
+    "Helvetica",
+    sans-serif;
+}
+
 .mobile-pricing-container {
   display: flex;
   flex-direction: column;
@@ -7,12 +16,11 @@
   margin: 0 auto;
   padding: 20px;
   gap: 20px;
-  font-family:
-    "Inter",
-    -apple-system,
-    "Roboto",
-    "Helvetica",
-    sans-serif;
+}
+
+/* Hide desktop table on mobile/tablet */
+.desktop-table-container {
+  display: none;
 }
 
 .mobile-pricing-card {
