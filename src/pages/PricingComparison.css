@@ -412,17 +412,45 @@
 
 /* Large Desktop */
 @media (min-width: 1280px) {
-  .mobile-pricing-container {
-    max-width: 1000px;
-    padding: 80px;
+  .desktop-table-container {
+    padding: 60px;
+    max-width: 1600px;
   }
 
-  .mobile-pricing-card.detailed {
-    padding: 48px 40px;
+  .pricing-table th,
+  .pricing-table td {
+    padding: 24px;
   }
 
-  .mobile-pricing-card.compact {
-    padding: 40px 48px;
+  .table-plan-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .table-plan-level {
+    font-size: 20px;
+  }
+
+  .table-plan-type {
+    font-size: 15px;
+  }
+
+  .table-plan-price {
+    font-size: 18px;
+  }
+
+  .feature-name {
+    font-size: 17px;
+  }
+
+  .feature-value {
+    font-size: 16px;
+  }
+
+  .table-action-button {
+    padding: 14px 28px;
+    font-size: 15px;
+    min-width: 140px;
   }
 }
 
