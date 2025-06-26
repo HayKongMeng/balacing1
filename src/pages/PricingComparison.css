@@ -325,11 +325,22 @@
   }
 
   .pricing-card {
-    padding: 40px;
+    padding: 48px 40px;
   }
 
   .feature-table {
-    max-width: 1102px;
-    align-self: end;
+    width: 100%;
+  }
+
+  .table-header {
+    grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 32px 40px;
+  }
+
+  .feature-row {
+    grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 20px 40px;
   }
 }
