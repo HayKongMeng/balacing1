@@ -630,6 +630,7 @@ export default function Example() {
                   fontWeight: "400",
                   justifyContent: "space-around",
                   pointerEvents: "auto",
+                  width: "100%",
                 }}
               >
                 <div
@@ -716,6 +717,7 @@ export default function Example() {
                   fontWeight: "400",
                   justifyContent: "space-around",
                   pointerEvents: "auto",
+                  width: "100%",
                 }}
               >
                 <div
@@ -802,6 +804,7 @@ export default function Example() {
                   fontWeight: "400",
                   justifyContent: "space-around",
                   pointerEvents: "auto",
+                  width: "100%",
                 }}
               >
                 <div
@@ -888,6 +891,7 @@ export default function Example() {
                   fontWeight: "400",
                   justifyContent: "space-around",
                   pointerEvents: "auto",
+                  width: "100%",
                 }}
               >
                 <div
@@ -974,6 +978,7 @@ export default function Example() {
                   fontWeight: "400",
                   justifyContent: "space-around",
                   pointerEvents: "auto",
+                  width: "100%",
                 }}
               >
                 <div
@@ -1060,6 +1065,7 @@ export default function Example() {
                   fontWeight: "400",
                   justifyContent: "space-around",
                   pointerEvents: "auto",
+                  width: "100%",
                 }}
               >
                 <div
@@ -1146,6 +1152,7 @@ export default function Example() {
                   fontWeight: "400",
                   justifyContent: "space-around",
                   pointerEvents: "auto",
+                  width: "100%",
                 }}
               >
                 <div
