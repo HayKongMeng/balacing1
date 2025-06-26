@@ -260,7 +260,7 @@
 
 /* Tablet Styles */
 @media (min-width: 768px) {
-  .pricing-cards {
+  .pricing-cards-wrapper {
     gap: 24px;
   }
 
