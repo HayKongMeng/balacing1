@@ -228,6 +228,7 @@
 
 .plan-label {
   min-width: 100px;
+  width: 100%;
 }
 
 .plan-label.highlighted-label {
