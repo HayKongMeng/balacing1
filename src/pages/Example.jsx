@@ -16,6 +16,9 @@ export default function Example() {
             </div>
 
             <div className="pricing-cards-wrapper">
+              {/* Spacer to align with Features column */}
+              <div className="features-spacer"></div>
+
               {/* Startup VPS Card */}
               <div className="pricing-card">
                 <h3 className="plan-name">STARTUP VPS</h3>
