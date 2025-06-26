@@ -30,9 +30,11 @@
   z-index: 10;
   display: flex;
   margin-top: -87px;
-  align-items: stretch;
   width: auto;
   align-self: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .header-content {
@@ -259,7 +261,6 @@
   .pricing-cards {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
   }
 
   .pricing-card {
