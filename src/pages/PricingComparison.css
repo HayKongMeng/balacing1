@@ -33,17 +33,17 @@
   align-items: stretch;
   width: 100%;
   align-self: center;
+  padding: 20px;
 }
 
 .header-content {
   align-self: end;
   display: flex;
-  padding: 19px 17px 31px;
+  padding: 0;
   flex-direction: column;
   align-items: stretch;
-  margin-right: auto;
-  width: auto;
-  flex-grow: 0;
+  min-width: 150px;
+  flex-shrink: 0;
 }
 
 .main-title {
