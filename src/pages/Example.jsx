@@ -7,15 +7,15 @@ export default function Example() {
       <div className="pricing-card-wrapper">
         {/* Header Section */}
         <div className="header-section">
-          <div className="header-content">
-            <h1 className="main-title">Detailed Feature Comparison</h1>
-            <p className="main-description">
-              Compare all features across our hosting plans
-            </p>
-          </div>
-
-          {/* Pricing Cards */}
           <div className="pricing-cards">
+            <div className="header-content">
+              <h1 className="main-title">Detailed Feature Comparison</h1>
+              <p className="main-description">
+                Compare all features across our hosting plans
+              </p>
+            </div>
+
+            <div className="pricing-cards-wrapper">
             {/* Startup VPS Card */}
             <div className="pricing-card">
               <h3 className="plan-name">STARTUP VPS</h3>
