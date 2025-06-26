@@ -186,31 +186,35 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 20px;
   font-size: 18px;
   color: rgba(15, 23, 42, 1);
   font-weight: 700;
-  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .feature-label {
-  margin-right: auto;
+  min-width: 150px;
+  flex-shrink: 0;
 }
 
 .plan-labels {
   display: flex;
   align-items: center;
-  gap: 40px;
   text-align: center;
-  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .plan-label {
-  min-width: 100px;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
 }
 
 .plan-label.highlighted-label {
-  padding: 24px 52px;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
 }
 
 .feature-rows {
