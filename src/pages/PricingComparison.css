@@ -308,6 +308,14 @@
     margin: 0 auto;
   }
 
+  .header-section {
+    padding: 20px;
+  }
+
+  .header-content {
+    min-width: 200px;
+  }
+
   .pricing-cards {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -316,10 +324,6 @@
   .pricing-card {
     max-width: 220px;
     padding: 32px 24px;
-  }
-
-  .header-content {
-    padding: 19px 17px 31px;
   }
 
   .main-title {
@@ -336,8 +340,16 @@
     text-align: left;
   }
 
+  .table-header {
+    padding: 20px;
+  }
+
   .feature-name {
     min-width: 200px;
+  }
+
+  .feature-row {
+    padding: 16px 20px;
   }
 
   .feature-value {
