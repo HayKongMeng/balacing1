@@ -30,9 +30,10 @@
   z-index: 10;
   display: flex;
   margin-top: -87px;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .header-content {
