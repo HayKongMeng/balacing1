@@ -252,26 +252,23 @@
 /* Tablet Styles */
 @media (min-width: 768px) {
   .pricing-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 24px;
   }
 
   .pricing-card {
-    flex: 1;
-    min-width: 200px;
+    padding: 36px 24px;
   }
 
   .table-header {
-    justify-content: space-between;
+    grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 24px;
   }
 
-  .plan-labels {
-    gap: 120px;
-  }
-
-  .feature-values {
-    gap: 72px;
+  .feature-row {
+    grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 16px 24px;
   }
 }
 
