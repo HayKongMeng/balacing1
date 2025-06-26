@@ -267,24 +267,22 @@
 @media (min-width: 768px) {
   .pricing-cards {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .pricing-card {
     flex: 1;
-    min-width: 200px;
+    max-width: 200px;
+    padding: 32px 20px;
   }
 
   .table-header {
-    justify-content: space-between;
+    padding: 20px;
   }
 
-  .plan-labels {
-    gap: 120px;
-  }
-
-  .feature-values {
-    gap: 72px;
+  .feature-name {
+    min-width: 180px;
   }
 }
 
