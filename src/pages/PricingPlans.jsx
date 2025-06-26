@@ -9,6 +9,7 @@ const PricingPlans = () => {
       level: "Level 1",
       type: "Basic plan",
       price: "$10.00/month",
+      iconText: "L1",
       description:
         "Perfect for small projects, personal websites, and development environments",
       features: [
@@ -17,7 +18,7 @@ const PricingPlans = () => {
         "Storage: 10 GB",
         "Transfer: Unlimited",
         "Anti-DDoS: Free",
-        "Database Options: MySQL, MongoDB",
+        "Database Options: MySQL ,MongoDB",
       ],
       showButton: true,
       isExpanded: true,
@@ -27,6 +28,7 @@ const PricingPlans = () => {
       level: "Level 2",
       type: "Pro plan",
       price: "$15.00/month",
+      iconText: "L2",
       features: [
         "vCPU: 32",
         "RAM: 64 GB",
@@ -43,6 +45,7 @@ const PricingPlans = () => {
       level: "Level 3",
       type: "Enterprise plan",
       price: "$20.00/month",
+      iconText: "L3",
       features: [
         "vCPU: 64",
         "RAM: 128 GB",
@@ -59,6 +62,7 @@ const PricingPlans = () => {
       level: "Level 4",
       type: "Enterprise plan",
       price: "$25.00/month",
+      iconText: "L4",
       features: [
         "vCPU: 128",
         "RAM: 256 GB",
@@ -75,6 +79,7 @@ const PricingPlans = () => {
       level: "Level 5",
       type: "Enterprise plan",
       price: "$30.00/month",
+      iconText: "L5",
       features: [
         "vCPU: 256",
         "RAM: 512 GB",
@@ -106,7 +111,7 @@ const PricingPlans = () => {
           >
             <div className="plan-info">
               <div className="plan-icon">
-                <span className="plan-level-text">L1</span>
+                <span className="plan-level-text">{plan.iconText}</span>
               </div>
               <div className="plan-details">
                 <h3 className="plan-level">{plan.level}</h3>
