@@ -62,11 +62,18 @@
 
 /* Pricing Cards */
 .pricing-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.pricing-cards-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   width: 100%;
-  margin-bottom: 0;
+  justify-content: center;
 }
 
 .pricing-card {
