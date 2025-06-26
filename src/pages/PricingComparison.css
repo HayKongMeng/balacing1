@@ -1,4 +1,15 @@
 /* Mobile-first responsive design */
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  max-width: 1280px;
+  text-align: center;
+  pointer-events: auto;
+}
+
 .pricing-container {
   display: flex;
   padding-top: 87px;
@@ -33,6 +44,7 @@
   align-items: stretch;
   width: auto;
   align-self: center;
+  flex-direction: row;
 }
 
 .header-content {
@@ -41,6 +53,7 @@
   padding: 19px 17px 31px;
   flex-direction: column;
   align-items: stretch;
+  justify-content: flex-start;
 }
 
 .main-title {
@@ -174,6 +187,11 @@
 /* Feature Table */
 .feature-table {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-weight: 400;
 }
 
 .table-header {
@@ -185,23 +203,32 @@
   font-size: 18px;
   color: rgba(15, 23, 42, 1);
   font-weight: 700;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
 
 .feature-label {
-  margin-right: auto;
+  width: auto;
+  flex-grow: 0;
+  padding: 20px;
+  font-weight: 700;
 }
 
 .plan-labels {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
   text-align: center;
-  flex-wrap: wrap;
+  font-weight: 700;
+  width: 100%;
+  flex-grow: 0;
 }
 
 .plan-label {
   min-width: 100px;
+  width: 100%;
 }
 
 .plan-label.highlighted-label {
@@ -210,7 +237,10 @@
 
 .feature-rows {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: 400;
 }
 
 .feature-row {
@@ -239,6 +269,7 @@
   text-align: center;
   flex: 1;
   justify-content: space-around;
+  width: 100%;
 }
 
 .feature-value {
@@ -259,7 +290,6 @@
   .pricing-cards {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
   }
 
   .pricing-card {
@@ -268,11 +298,9 @@
   }
 
   .table-header {
-    justify-content: space-between;
   }
 
   .plan-labels {
-    gap: 120px;
   }
 
   .feature-values {
