@@ -203,11 +203,13 @@
   color: rgba(15, 23, 42, 1);
   font-weight: 700;
   padding: 20px;
+  justify-content: flex-start;
 }
 
 .feature-label {
   min-width: 150px;
   flex-shrink: 0;
+  text-align: left;
 }
 
 .plan-labels {
