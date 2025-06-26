@@ -56,6 +56,8 @@
   line-height: 32px;
   margin-right: auto;
   text-align: left;
+  width: auto;
+  align-self: center;
 }
 
 .main-description {
