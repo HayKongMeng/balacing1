@@ -31,12 +31,11 @@
   display: flex;
   margin-top: -87px;
   align-items: stretch;
-  width: auto;
-  align-self: center;
+  width: 100%;
+  flex-direction: column;
 }
 
 .header-content {
-  align-self: end;
   display: flex;
   padding: 19px 17px 31px;
   flex-direction: column;
