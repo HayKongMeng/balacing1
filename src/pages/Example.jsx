@@ -21,6 +21,7 @@ export default function Example() {
           <div className="pricing-card">
             <h3 className="plan-name">STARTUP VPS</h3>
             <div className="price-container">
+              <span className="price-amount">$7.78</span>
               <span className="price-suffix">/month</span>
             </div>
             <p className="plan-description">
@@ -33,6 +34,7 @@ export default function Example() {
           <div className="pricing-card">
             <h3 className="plan-name">CHALLENGER VPS</h3>
             <div className="price-container">
+              <span className="price-amount">$13.78</span>
               <span className="price-suffix">/month</span>
             </div>
             <p className="plan-description">
