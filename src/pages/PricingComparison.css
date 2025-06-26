@@ -216,44 +216,37 @@
 }
 
 .feature-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+  gap: 20px;
   width: 100%;
   align-items: center;
-  gap: 20px;
   font-size: 16px;
-  padding-left: 20px;
+  padding: 16px 20px;
   border-bottom: 1px solid rgba(240, 243, 247, 1);
 }
 
 .feature-name {
   color: rgba(55, 65, 81, 1);
   font-weight: 500;
-  min-width: 120px;
   text-align: left;
 }
 
 .feature-values {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  color: rgba(31, 41, 55, 1);
-  font-weight: 400;
-  text-align: center;
-  flex: 1;
-  justify-content: space-around;
+  display: contents;
 }
 
 .feature-value {
-  min-width: 100px;
-  width: 100%;
+  color: rgba(31, 41, 55, 1);
+  font-weight: 400;
   text-align: center;
+  padding: 8px;
 }
 
 .feature-value.highlighted-value {
   background-color: rgba(250, 251, 252, 1);
-  padding: 21px;
+  padding: 21px 8px;
   border-radius: 4px;
-  width: 100%;
 }
 
 /* Tablet Styles */
