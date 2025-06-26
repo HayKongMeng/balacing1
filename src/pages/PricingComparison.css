@@ -209,7 +209,10 @@
 }
 
 .feature-label {
-  margin-right: auto;
+  width: auto;
+  flex-grow: 0;
+  padding: 20px;
+  font-weight: 700;
 }
 
 .plan-labels {
