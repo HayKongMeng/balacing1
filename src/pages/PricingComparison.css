@@ -257,9 +257,10 @@
 
 .feature-value.highlighted-value {
   background-color: rgba(250, 251, 252, 1);
-  padding: 21px;
+  padding: 16px;
   border-radius: 4px;
-  width: 100%;
+  flex: 1;
+  max-width: 200px;
 }
 
 /* Tablet Styles */
