@@ -268,6 +268,14 @@
 
 /* Tablet Styles */
 @media (min-width: 768px) {
+  .header-section {
+    padding: 20px;
+  }
+
+  .header-content {
+    min-width: 180px;
+  }
+
   .pricing-cards {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -286,6 +294,10 @@
 
   .feature-name {
     min-width: 180px;
+  }
+
+  .feature-row {
+    padding: 16px 20px;
   }
 }
 
