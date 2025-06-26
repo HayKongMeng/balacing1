@@ -176,6 +176,7 @@
 /* Feature Table */
 .feature-table {
   width: 100%;
+  margin-right: auto;
 }
 
 .table-header {
