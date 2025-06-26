@@ -3,7 +3,8 @@ import "./PricingComparison.css";
 
 export default function Example() {
   return (
-    <div className="pricing-container">
+    <div className="page-wrapper">
+      <div className="pricing-container">
       <div className="pricing-card-wrapper">
         {/* Header Section */}
         <div className="header-section">
