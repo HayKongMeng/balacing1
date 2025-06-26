@@ -40,6 +40,8 @@
   padding: 19px 17px 31px;
   flex-direction: column;
   align-items: stretch;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .main-title {
