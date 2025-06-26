@@ -185,7 +185,8 @@
   font-size: 18px;
   color: rgba(15, 23, 42, 1);
   font-weight: 700;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .feature-label {
