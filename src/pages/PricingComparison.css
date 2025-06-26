@@ -30,17 +30,21 @@
   z-index: 10;
   display: flex;
   margin-top: -87px;
-  align-items: stretch;
-  width: auto;
-  align-self: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .header-content {
-  align-self: end;
   display: flex;
   padding: 19px 17px 31px;
   flex-direction: column;
   align-items: stretch;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  align-self: stretch;
 }
 
 .main-title {
@@ -64,6 +68,24 @@
 /* Pricing Cards */
 .pricing-cards {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.pricing-cards-wrapper {
+  display: grid;
+  grid-template-columns: 350px 1fr 1fr 1fr 1fr;
+  gap: 32px;
+  width: auto;
+  justify-content: center;
+  flex-grow: 1;
+  align-self: stretch;
+  padding: 0 32px;
+}
+
+.features-spacer {
+  /* Empty spacer to align with Features column */
 }
 
 .pricing-card {
@@ -74,7 +96,6 @@
   display: flex;
   padding: 32px;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
@@ -178,34 +199,34 @@
 
 .table-header {
   background-color: rgba(248, 250, 252, 1);
-  display: flex;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+  gap: 20px;
   width: 100%;
   align-items: center;
-  gap: 20px;
+  padding: 24px 20px;
   font-size: 18px;
   color: rgba(15, 23, 42, 1);
   font-weight: 700;
-  flex-wrap: wrap;
 }
 
 .feature-label {
-  margin-right: auto;
+  text-align: left;
+  align-self: center;
+  width: 100%;
 }
 
 .plan-labels {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  text-align: center;
-  flex-wrap: wrap;
+  display: contents;
 }
 
 .plan-label {
-  min-width: 100px;
+  text-align: center;
+  padding: 0;
 }
 
 .plan-label.highlighted-label {
-  padding: 24px 52px;
+  padding: 0;
 }
 
 .feature-rows {
@@ -214,69 +235,59 @@
 }
 
 .feature-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+  gap: 20px;
   width: 100%;
   align-items: center;
-  gap: 20px;
   font-size: 16px;
-  padding-left: 20px;
+  padding: 16px 20px;
   border-bottom: 1px solid rgba(240, 243, 247, 1);
 }
 
 .feature-name {
   color: rgba(55, 65, 81, 1);
   font-weight: 500;
-  min-width: 120px;
   text-align: left;
 }
 
 .feature-values {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  color: rgba(31, 41, 55, 1);
-  font-weight: 400;
-  text-align: center;
-  flex: 1;
-  justify-content: space-around;
+  display: contents;
 }
 
 .feature-value {
-  min-width: 100px;
-  width: 100%;
+  color: rgba(31, 41, 55, 1);
+  font-weight: 400;
   text-align: center;
+  padding: 8px;
 }
 
 .feature-value.highlighted-value {
   background-color: rgba(250, 251, 252, 1);
-  padding: 21px;
+  padding: 21px 8px;
   border-radius: 4px;
-  width: 100%;
 }
 
 /* Tablet Styles */
 @media (min-width: 768px) {
-  .pricing-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+  .pricing-cards-wrapper {
+    gap: 24px;
   }
 
   .pricing-card {
-    flex: 1;
-    min-width: 200px;
+    padding: 36px 24px;
   }
 
   .table-header {
-    justify-content: space-between;
+    grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 24px;
   }
 
-  .plan-labels {
-    gap: 120px;
-  }
-
-  .feature-values {
-    gap: 72px;
+  .feature-row {
+    grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 16px 24px;
   }
 }
 
@@ -287,12 +298,12 @@
     margin: 0 auto;
   }
 
-  .pricing-cards {
-    flex-wrap: nowrap;
+  .pricing-cards-wrapper {
+    gap: 32px;
   }
 
   .pricing-card {
-    min-width: 200px;
+    padding: 40px 32px;
   }
 
   .header-content {
@@ -313,11 +324,16 @@
     text-align: left;
   }
 
-  .feature-row {
+  .table-header {
+    grid-template-columns: 350px 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 24px 32px;
   }
 
-  .feature-name {
-    min-width: 150px;
+  .feature-row {
+    grid-template-columns: 350px 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 16px 32px;
   }
 }
 
@@ -328,11 +344,22 @@
   }
 
   .pricing-card {
-    padding: 40px;
+    padding: 48px 40px;
   }
 
   .feature-table {
-    max-width: 1102px;
-    align-self: end;
+    width: 100%;
+  }
+
+  .table-header {
+    grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 32px 40px;
+  }
+
+  .feature-row {
+    grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 20px 40px;
   }
 }
