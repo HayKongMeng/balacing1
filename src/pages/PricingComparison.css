@@ -295,10 +295,12 @@
 
   .pricing-cards {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .pricing-card {
-    min-width: 200px;
+    max-width: 220px;
+    padding: 32px 24px;
   }
 
   .header-content {
@@ -319,11 +321,16 @@
     text-align: left;
   }
 
-  .feature-row {
+  .feature-name {
+    min-width: 200px;
   }
 
-  .feature-name {
-    min-width: 150px;
+  .feature-value {
+    max-width: 220px;
+  }
+
+  .feature-value.highlighted-value {
+    max-width: 220px;
   }
 }
 
