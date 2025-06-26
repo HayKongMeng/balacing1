@@ -31,16 +31,22 @@
   display: flex;
   margin-top: -87px;
   align-items: stretch;
-  width: auto;
+  width: 100%;
   align-self: center;
+  padding: 20px;
 }
 
 .header-content {
   align-self: end;
   display: flex;
-  padding: 19px 17px 31px;
+  padding: 0;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-start;
+  flex-grow: 0;
+  justify-content: center;
+  width: auto;
+  margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .main-title {
@@ -50,6 +56,8 @@
   line-height: 32px;
   margin-right: auto;
   text-align: left;
+  width: auto;
+  align-self: center;
 }
 
 .main-description {
@@ -59,11 +67,18 @@
   line-height: 24px;
   margin: 9px auto 0 0;
   text-align: left;
+  width: auto;
+  align-self: center;
 }
 
 /* Pricing Cards */
 .pricing-cards {
   display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin-right: auto;
 }
 
 .pricing-card {
@@ -72,10 +87,13 @@
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(230, 233, 245, 1);
   display: flex;
-  padding: 32px;
+  padding: 24px 16px;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex: 1;
+  max-width: 200px;
+  width: 100%;
 }
 
 .pricing-card.highlighted {
@@ -181,31 +199,52 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 20px;
   font-size: 18px;
   color: rgba(15, 23, 42, 1);
   font-weight: 700;
-  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: flex-start;
 }
 
 .feature-label {
-  margin-right: auto;
+  min-width: 150px;
+  flex-shrink: 0;
+  text-align: left;
 }
 
 .plan-labels {
   display: flex;
   align-items: center;
-  gap: 40px;
   text-align: center;
-  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .plan-label {
-  min-width: 100px;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.plan-label:nth-child(1) {
+  text-align: right;
+}
+
+.plan-label:nth-child(2) {
+  text-align: right;
+}
+
+.plan-label:nth-child(3) {
+  text-align: center;
+}
+
+.plan-label:nth-child(4) {
+  text-align: left;
 }
 
 .plan-label.highlighted-label {
-  padding: 24px 52px;
+  flex: 1;
+  max-width: 200px;
 }
 
 .feature-rows {
@@ -217,66 +256,75 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 20px;
   font-size: 16px;
-  padding-left: 20px;
+  padding: 16px 20px;
   border-bottom: 1px solid rgba(240, 243, 247, 1);
 }
 
 .feature-name {
   color: rgba(55, 65, 81, 1);
   font-weight: 500;
-  min-width: 120px;
+  min-width: 150px;
   text-align: left;
+  flex-shrink: 0;
 }
 
 .feature-values {
   display: flex;
   align-items: center;
-  gap: 40px;
   color: rgba(31, 41, 55, 1);
   font-weight: 400;
   text-align: center;
   flex: 1;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .feature-value {
-  min-width: 100px;
-  width: 100%;
+  flex: 1;
+  max-width: 200px;
   text-align: center;
 }
 
 .feature-value.highlighted-value {
   background-color: rgba(250, 251, 252, 1);
-  padding: 21px;
+  padding: 16px;
   border-radius: 4px;
-  width: 100%;
+  flex: 1;
+  max-width: 200px;
 }
 
 /* Tablet Styles */
 @media (min-width: 768px) {
+  .header-section {
+    padding: 20px;
+  }
+
+  .header-content {
+    min-width: 180px;
+  }
+
   .pricing-cards {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .pricing-card {
     flex: 1;
-    min-width: 200px;
+    max-width: 200px;
+    padding: 32px 20px;
   }
 
   .table-header {
-    justify-content: space-between;
+    padding: 20px;
   }
 
-  .plan-labels {
-    gap: 120px;
+  .feature-name {
+    min-width: 180px;
   }
 
-  .feature-values {
-    gap: 72px;
+  .feature-row {
+    padding: 16px 20px;
   }
 }
 
@@ -287,16 +335,22 @@
     margin: 0 auto;
   }
 
-  .pricing-cards {
-    flex-wrap: nowrap;
-  }
-
-  .pricing-card {
-    min-width: 200px;
+  .header-section {
+    padding: 20px;
   }
 
   .header-content {
-    padding: 19px 17px 31px;
+    min-width: 200px;
+  }
+
+  .pricing-cards {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .pricing-card {
+    max-width: 220px;
+    padding: 32px 24px;
   }
 
   .main-title {
@@ -313,11 +367,24 @@
     text-align: left;
   }
 
-  .feature-row {
+  .table-header {
+    padding: 20px;
   }
 
   .feature-name {
-    min-width: 150px;
+    min-width: 200px;
+  }
+
+  .feature-row {
+    padding: 16px 20px;
+  }
+
+  .feature-value {
+    max-width: 220px;
+  }
+
+  .feature-value.highlighted-value {
+    max-width: 220px;
   }
 }
 
