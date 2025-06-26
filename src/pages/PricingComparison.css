@@ -226,33 +226,32 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 20px;
   font-size: 16px;
-  padding-left: 20px;
+  padding: 16px 20px;
   border-bottom: 1px solid rgba(240, 243, 247, 1);
 }
 
 .feature-name {
   color: rgba(55, 65, 81, 1);
   font-weight: 500;
-  min-width: 120px;
+  min-width: 150px;
   text-align: left;
+  flex-shrink: 0;
 }
 
 .feature-values {
   display: flex;
   align-items: center;
-  gap: 40px;
   color: rgba(31, 41, 55, 1);
   font-weight: 400;
   text-align: center;
   flex: 1;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .feature-value {
-  min-width: 100px;
-  width: 100%;
+  flex: 1;
+  max-width: 200px;
   text-align: center;
 }
 
