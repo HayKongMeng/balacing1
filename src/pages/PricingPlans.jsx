@@ -28,7 +28,7 @@ const PricingPlans = () => {
       id: "level2",
       level: "Level 2",
       type: "Pro plan",
-      price: "$16.00/month",
+      price: "$15.00/month",
       iconText: "L2",
       features: [
         "vCPU: 32",
