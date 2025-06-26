@@ -211,10 +211,12 @@
 
 .plan-labels {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 120px;
   text-align: center;
-  flex-wrap: wrap;
+  font-weight: 700;
 }
 
 .plan-label {
