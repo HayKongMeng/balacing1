@@ -204,7 +204,8 @@
   color: rgba(15, 23, 42, 1);
   font-weight: 700;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
 
 .feature-label {
