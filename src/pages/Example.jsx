@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PricingComparison.css";
 
 export default function Example() {
+  const [expandedCards, setExpandedCards] = useState({ 1: true }); // Level 1 expanded by default
+
+  const toggleCard = (cardId) => {
+    setExpandedCards((prev) => ({
+      ...prev,
+      [cardId]: !prev[cardId],
+    }));
+  };
+
   const plans = [
     {
       id: 1,
@@ -18,7 +27,6 @@ export default function Example() {
         "Anti-DDoS": "Free",
         "Database Options": "MySQL, MongoDB",
       },
-      showDetails: true,
       buttonText: "Choose plan",
       buttonType: "primary",
     },
@@ -35,8 +43,8 @@ export default function Example() {
         "Anti-DDoS": "Free",
         "Database Options": "MySQL, MongoDB, PostgreSQL",
       },
-      showDetails: false,
-      buttonType: "dropdown",
+      buttonText: "Choose plan",
+      buttonType: "secondary",
     },
     {
       id: 3,
@@ -51,8 +59,8 @@ export default function Example() {
         "Anti-DDoS": "Premium",
         "Database Options": "All databases + Redis",
       },
-      showDetails: false,
-      buttonType: "dropdown",
+      buttonText: "Choose plan",
+      buttonType: "secondary",
     },
     {
       id: 4,
@@ -67,8 +75,8 @@ export default function Example() {
         "Anti-DDoS": "Premium",
         "Database Options": "All databases + Dedicated",
       },
-      showDetails: false,
-      buttonType: "dropdown",
+      buttonText: "Choose plan",
+      buttonType: "secondary",
     },
     {
       id: 5,
@@ -83,8 +91,8 @@ export default function Example() {
         "Anti-DDoS": "Enterprise",
         "Database Options": "Custom solutions",
       },
-      showDetails: false,
-      buttonType: "dropdown",
+      buttonText: "Choose plan",
+      buttonType: "secondary",
     },
   ];
 
