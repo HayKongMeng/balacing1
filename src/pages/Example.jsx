@@ -7,7 +7,18 @@ export default function Example() {
       <div className="pricing-card-wrapper">
         {/* Header Section */}
         <div className="header-section">
-          <div className="header-content">
+          <div
+            className="header-content"
+            style={{
+              display: "flex",
+              alignSelf: "end",
+              flexDirection: "column",
+              fontWeight: "400",
+              pointerEvents: "auto",
+              marginRight: "auto",
+              padding: "19px 17px 31px",
+            }}
+          >
             <h1
               style={{
                 color: "rgb(15, 23, 42)",
