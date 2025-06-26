@@ -67,6 +67,8 @@
   line-height: 24px;
   margin: 9px auto 0 0;
   text-align: left;
+  width: auto;
+  align-self: center;
 }
 
 /* Pricing Cards */
