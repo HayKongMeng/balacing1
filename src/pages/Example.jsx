@@ -1,5 +1,5 @@
-import React from 'react'
-import './PricingComparison.css'
+import React from "react";
+import "./PricingComparison.css";
 
 export default function Example() {
   return (
@@ -9,59 +9,79 @@ export default function Example() {
         <div className="header-section">
           <div className="header-content">
             <h1 className="main-title">Detailed Feature Comparison</h1>
-            <p className="main-description">Compare all features across our hosting plans</p>
+            <p className="main-description">
+              Compare all features across our hosting plans
+            </p>
           </div>
 
           {/* Pricing Cards */}
           <div className="pricing-cards">
-          {/* Startup VPS Card */}
-          <div className="pricing-card">
-            <h3 className="plan-name">STARTUP VPS</h3>
-            <div className="price-container">
-              <span className="price-amount">$7.78</span>
-              <span className="price-suffix">/month</span>
+            {/* Startup VPS Card */}
+            <div className="pricing-card">
+              <h3 className="plan-name">STARTUP VPS</h3>
+              <div className="price-container">
+                <span className="price-amount">$7.78</span>
+                <span className="price-suffix">/month</span>
+              </div>
+              <p className="plan-description">
+                Perfect for small projects and testing
+              </p>
+              <button className="plan-button inactive">Upgraded plan</button>
             </div>
-            <p className="plan-description">Perfect for small projects and testing</p>
-            <button className="plan-button inactive">Upgraded plan</button>
-          </div>
 
-          {/* Challenger VPS Card */}
-          <div className="pricing-card">
-            <h3 className="plan-name">CHALLENGER VPS</h3>
-            <div className="price-container">
-              <span className="price-amount">$13.78</span>
-              <span className="price-suffix">/month</span>
+            {/* Challenger VPS Card */}
+            <div className="pricing-card">
+              <h3 className="plan-name">CHALLENGER VPS</h3>
+              <div className="price-container">
+                <span className="price-amount">$13.78</span>
+                <span className="price-suffix">/month</span>
+              </div>
+              <p className="plan-description">
+                Ideal for growing businesses and applications
+              </p>
+              <button className="plan-button inactive">Upgraded plan</button>
             </div>
-            <p className="plan-description">Ideal for growing businesses and applications</p>
-            <button className="plan-button inactive">Upgraded plan</button>
-          </div>
 
-          {/* Leader VPS Card - Active Plan */}
-          <div className="pricing-card highlighted">
-            <h3 className="plan-name">LEADER VPS</h3>
-            <div className="price-container">
-              <span className="price-amount">$16.78</span>
-              <span className="price-suffix">/month</span>
+            {/* Leader VPS Card - Active Plan */}
+            <div className="pricing-card highlighted">
+              <h3 className="plan-name">LEADER VPS</h3>
+              <div className="price-container">
+                <span className="price-amount">$16.78</span>
+                <span className="price-suffix">/month</span>
+              </div>
+              <p className="plan-description">
+                Maximum performance for demanding workloads
+              </p>
+              <button className="plan-button active">
+                <svg
+                  className="checkmark-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle cx="12" cy="12" r="12" fill="currentColor" />
+                  <path
+                    d="M9 12l2 2 4-4"
+                    stroke="white"
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                </svg>
+                Your plan
+              </button>
             </div>
-            <p className="plan-description">Maximum performance for demanding workloads</p>
-            <button className="plan-button active">
-              <svg className="checkmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="12" fill="currentColor"/>
-                <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2" fill="none"/>
-              </svg>
-              Your plan
-            </button>
-          </div>
 
-          {/* Boss VPS Card */}
-          <div className="pricing-card">
-            <h3 className="plan-name">BOSS VPS</h3>
-            <div className="price-container">
-              <span className="price-amount">$25.78</span>
-              <span className="price-suffix">/month</span>
+            {/* Boss VPS Card */}
+            <div className="pricing-card">
+              <h3 className="plan-name">BOSS VPS</h3>
+              <div className="price-container">
+                <span className="price-amount">$25.78</span>
+                <span className="price-suffix">/month</span>
+              </div>
+              <p className="plan-description">Good for enterprise company</p>
+              <button className="plan-button primary">upgrade plan</button>
             </div>
-            <p className="plan-description">Good for enterprise company</p>
-            <button className="plan-button primary">upgrade plan</button>
           </div>
         </div>
 
@@ -153,5 +173,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }
