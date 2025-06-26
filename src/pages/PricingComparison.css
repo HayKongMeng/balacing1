@@ -280,11 +280,11 @@
   }
 
   .pricing-cards {
-    flex-wrap: nowrap;
+    gap: 32px;
   }
 
   .pricing-card {
-    min-width: 200px;
+    padding: 40px 32px;
   }
 
   .header-content {
@@ -305,11 +305,16 @@
     text-align: left;
   }
 
-  .feature-row {
+  .table-header {
+    grid-template-columns: 350px 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 24px 32px;
   }
 
-  .feature-name {
-    min-width: 150px;
+  .feature-row {
+    grid-template-columns: 350px 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 16px 32px;
   }
 }
 
