@@ -102,22 +102,22 @@ export default function Example() {
           {/* Feature Rows */}
           <div className="feature-rows">
             <div className="feature-row">
-              <div className="feature-name">vCPU Cores</div>
-              <div className="feature-values">
-                <div className="feature-value">1 Core</div>
-                <div className="feature-value highlighted-value">2 Cores</div>
-                <div className="feature-value">4 Cores</div>
-                <div className="feature-value highlighted-value">2 Cores</div>
-              </div>
-            </div>
-
-            <div className="feature-row">
               <div className="feature-name">RAM Memory</div>
               <div className="feature-values">
                 <div className="feature-value">2 GB</div>
                 <div className="feature-value highlighted-value">4 GB</div>
                 <div className="feature-value">8 GB</div>
                 <div className="feature-value highlighted-value">4 GB</div>
+              </div>
+            </div>
+
+            <div className="feature-row">
+              <div className="feature-name">vCPU Cores</div>
+              <div className="feature-values">
+                <div className="feature-value">1 Core</div>
+                <div className="feature-value highlighted-value">2 Cores</div>
+                <div className="feature-value">4 Cores</div>
+                <div className="feature-value highlighted-value">2 Cores</div>
               </div>
             </div>
 
