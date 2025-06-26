@@ -16,7 +16,7 @@ export default function Example() {
                 lineHeight: "36px",
                 textAlign: "left",
                 pointerEvents: "auto",
-                margin: "0px auto 0px 0",
+                margin: "19px auto 19px 0",
               }}
             >
               Detailed Feature Comparison
