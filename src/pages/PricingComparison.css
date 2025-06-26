@@ -64,7 +64,6 @@
 /* Pricing Cards */
 .pricing-cards {
   display: flex;
-  gap: -48px;
 }
 
 .pricing-card {
@@ -181,7 +180,6 @@
   background-color: rgba(248, 250, 252, 1);
   display: flex;
   width: 100%;
-  padding: 24px 32px 24px 27px;
   align-items: center;
   gap: 20px;
   font-size: 18px;
@@ -274,7 +272,7 @@
   }
 
   .plan-labels {
-    gap: 100px;
+    gap: 120px;
   }
 
   .feature-values {
