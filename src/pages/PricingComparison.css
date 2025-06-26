@@ -185,6 +185,11 @@
 /* Feature Table */
 .feature-table {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-weight: 400;
 }
 
 .table-header {
