@@ -197,10 +197,10 @@
 
 .plan-labels {
   display: flex;
-  align-items: center;
-  gap: 40px;
-  text-align: center;
-  flex-wrap: wrap;
+  font-weight: 700;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .plan-label {
