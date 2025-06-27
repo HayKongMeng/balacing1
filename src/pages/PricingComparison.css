@@ -236,6 +236,7 @@
   font-weight: 500;
   min-width: 120px;
   text-align: left;
+  flex-grow: 0;
 }
 
 .feature-values {
