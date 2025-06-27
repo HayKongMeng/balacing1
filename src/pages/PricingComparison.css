@@ -31,8 +31,8 @@
   display: flex;
   margin-top: -87px;
   align-items: stretch;
-  width: auto;
-  align-self: center;
+  width: 100%;
+  align-self: start;
 }
 
 .header-content {
