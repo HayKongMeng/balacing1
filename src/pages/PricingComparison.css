@@ -205,10 +205,15 @@
 
 .plan-label {
   min-width: 100px;
+  width: 100%;
+  flex-grow: 0;
+  padding: 24px 0;
 }
 
 .plan-label.highlighted-label {
-  padding: 24px 52px;
+  width: 100%;
+  flex-grow: 0;
+  padding: 24px 0;
 }
 
 .feature-rows {
