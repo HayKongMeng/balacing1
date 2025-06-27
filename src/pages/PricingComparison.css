@@ -498,11 +498,7 @@
   }
 
   .table-header {
-    justify-content: space-between;
-  }
-
-  .plan-labels {
-    gap: 120px;
+    justify-content: center;
   }
 
   .feature-values {
