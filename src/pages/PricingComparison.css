@@ -64,6 +64,7 @@
 /* Pricing Cards */
 .pricing-cards {
   display: flex;
+  width: 100%;
 }
 
 .pricing-card {
